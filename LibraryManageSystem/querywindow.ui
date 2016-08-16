@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>queryWindow</class>
+ <widget class="QMainWindow" name="queryWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>751</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Query</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>701</width>
+       <height>113</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="3">
+       <widget class="QCheckBox" name="pressCheckBox">
+        <property name="text">
+         <string>press</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="titleCheckBox">
+        <property name="text">
+         <string>title</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QCheckBox" name="authorCheckBox">
+        <property name="text">
+         <string>author</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QCheckBox" name="yearCheckBox">
+        <property name="text">
+         <string>year</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="cateCheckBox">
+        <property name="text">
+         <string>category</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QCheckBox" name="priceCheckBox">
+        <property name="text">
+         <string>price</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="editCategory"/>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLabel" name="label2">
+        <property name="text">
+         <string>~</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="editTitle"/>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLineEdit" name="editAuthor"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="editLowYear"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label1">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>~</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLineEdit" name="editLowPrice"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLineEdit" name="editPress"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="editHighYear"/>
+      </item>
+      <item row="3" column="5">
+       <widget class="QLineEdit" name="editHighPrice"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>210</y>
+       <width>701</width>
+       <height>261</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="queryBtn">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>160</y>
+       <width>98</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Query</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ascBtn">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>480</y>
+       <width>151</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Order By ASC</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="discBtn">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>480</y>
+       <width>151</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Order By DISC</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile_F">
+    <property name="title">
+     <string>File(F)</string>
+    </property>
+   </widget>
+   <addaction name="menuFile_F"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
